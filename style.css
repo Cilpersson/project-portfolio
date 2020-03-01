@@ -198,6 +198,7 @@ span {
   grid-row-end: 5;
   width: 100%;
   z-index: 3;
+  visibility: visible;
 }
 
 .project-view h2 {
