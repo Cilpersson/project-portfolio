@@ -111,6 +111,7 @@ span {
   max-width: 610px;
   justify-content: space-between;
   margin: auto;
+  z-index: 5;
 }
 
 .header-text {
@@ -134,7 +135,7 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .social-media img {
@@ -151,16 +152,38 @@ span {
   border: 4px white solid;
   margin-bottom: -15px;
 }
-
+.introduction-container {
+  max-width: 610px;
+  margin: auto;
+}
 .introduction {
   background: #f4f4f4;
-  display: flex;
-  justify-content: center;
+  color: black;
+  margin: 10px 0 0 0;
+  padding: 58px 36px;
+  letter-spacing: 2px;
 }
 
-.introduction p {
-  margin: 5px 0 0 0;
-  padding: 58px 36px;
+.decoration {
+  display: flex;
+  align-items: center;
+  float: left;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.line {
+  width: 40px;
+  height: 3px;
+  background: #fa382f;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fa382f;
+  margin-left: -5px;
 }
 
 .tech {
