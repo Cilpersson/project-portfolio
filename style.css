@@ -414,6 +414,17 @@ span {
   }
 }
 @media (min-width: 1025px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h6 {
+    font-size: 24px;
+  }
   .header {
     background-image: url(images/header-desktop.jpeg);
   }
