@@ -5,15 +5,16 @@ body {
 }
 h1 {
   font-family: "Montserrat";
-  grid-row-start: 5;
+  /* grid-row-start: 5;
   grid-row-end: 7;
   grid-column-start: 1;
   grid-column-end: 3;
-  font-size: 11vw;
+  font-size: 11vw; */
   margin: 0;
   line-height: 1.1;
   padding: 0;
-  font-weight: 900;
+  font-weight: 700;
+  font-size: 40px;
 }
 h2 {
   grid-row-start: 7;
@@ -21,6 +22,7 @@ h2 {
   grid-column-start: 1;
   grid-column-end: 5;
   margin: 0;
+  font-size: 24px;
 }
 h3 {
   background-color: #fa382f;
@@ -34,7 +36,7 @@ h3 {
 .inverted-header {
   background: #f4f4f4;
   color: #fa382f;
-  font-weight: 900;
+  font-weight: 700;
   width: fit-content;
   margin: auto;
   padding-bottom: 36px;
@@ -53,10 +55,23 @@ h4 {
 }
 
 h5 {
-  font-weight: bolder;
+  font-weight: bold;
   font-size: 18px;
   margin: 0;
   padding-bottom: 12px;
+}
+
+h6 {
+  font-family: "Roboto";
+  color: #fff;
+  font-weight: normal;
+  display: inline;
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 p {
@@ -77,7 +92,7 @@ a {
 
 span {
   font-family: "Roboto";
-  font-weight: bolder;
+  font-weight: bold;
   color: #fa382f;
 }
 
@@ -85,24 +100,30 @@ span {
   background-image: url(images/header-mobile.jpeg);
   height: 130vw;
   background-size: cover;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(10, 1fr);
-  grid-gap: 10px 10px;
-  padding: 0 9vw;
+  padding: 0 36px;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: flex-end;
+  max-width: 610px;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.header-text {
+  align-self: flex-start;
 }
 
 .social-media {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 3;
-  grid-row-end: 5;
   display: flex;
   flex-direction: row;
   width: fit-content;
   height: fit-content;
   justify-self: end;
-  margin: 36px;
+  margin-top: 36px;
 }
 
 .icon-container {
@@ -122,17 +143,13 @@ span {
 }
 
 .dog {
-  grid-column-start: 2;
-  grid-column-end: 5;
   width: 39vw;
   height: 39vw;
   max-width: 220px;
   max-height: 220px;
-  grid-row-start: 8;
-  grid-row-end: 11;
-  justify-self: end;
   border-radius: 50%;
   border: 4px white solid;
+  margin-bottom: -15px;
 }
 
 .introduction {
@@ -241,13 +258,13 @@ span {
   flex-direction: column;
 }
 .thoughts-header {
-  font-weight: bolder;
+  font-weight: bold;
   margin: 5px 0;
   font-size: 17px;
 }
 
 .thoughts-span {
-  font-weight: lighter;
+  font-weight: normal;
   align-self: flex-start;
 }
 
@@ -297,11 +314,23 @@ span {
   margin: 0 10px;
 }
 
+.social-media-orange {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  height: fit-content;
+  justify-self: center;
+}
+
 .for-more {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 46px 36px 0;
+  padding: 46px 36px;
+}
+
+.for-more h3 {
+  margin-bottom: 36px;
 }
 
 .icon-container-orange {
@@ -328,7 +357,7 @@ span {
 }
 
 .name {
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 @media (max-width: 270px) {
@@ -348,17 +377,21 @@ span {
   }
   .header {
     background-image: url(images/header-tablet.jpeg);
-    height: 35vw;
+    height: 40vw;
   }
 
   .social-media img {
     width: 3vw;
     height: 3vw;
+    max-width: 20px;
+    max-height: 20px;
   }
   .icon-container {
     height: 6vw;
     width: 6vw;
-    margin-right: 10px;
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 5px;
   }
   .icon-container-orange {
     height: 6vw;
@@ -369,8 +402,9 @@ span {
   .dog {
     width: 18vw;
     height: 18vw;
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 150px;
+    max-height: 150px;
+    margin-top: -100px;
   }
   .card-grid {
     grid-template-columns: repeat(2, minmax(150px, 280px));
