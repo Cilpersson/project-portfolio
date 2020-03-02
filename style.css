@@ -175,7 +175,6 @@ span {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  grid-gap: 10px 10px;
   justify-self: center;
   margin: 36px auto 0;
   text-align: center;
@@ -191,7 +190,7 @@ span {
 
 .layer {
   background: #000;
-  opacity: 38%;
+  opacity: 0.4;
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 1;
@@ -216,6 +215,7 @@ span {
   grid-column-end: 5;
   margin: 0;
   grid-column-start: 1;
+  margin-top: 15px;
 }
 
 .tag-container {
