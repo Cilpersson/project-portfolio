@@ -3,13 +3,13 @@ body {
   color: #fff;
   font-family: "Montserrat";
 }
+
+video {
+  width: 100%;
+  display: none;
+}
 h1 {
   font-family: "Montserrat";
-  /* grid-row-start: 5;
-  grid-row-end: 7;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  font-size: 11vw; */
   margin: 0;
   line-height: 1.1;
   padding: 0;
@@ -25,7 +25,7 @@ h2 {
   font-size: 24px;
 }
 h3 {
-  background-color: #07255c;
+  background-color: #235207;
   font-weight: bold;
   width: fit-content;
   margin: auto;
@@ -35,7 +35,7 @@ h3 {
 
 .inverted-header {
   background: #f4f4f4;
-  color: #07255c;
+  color: #235207;
   font-weight: 700;
   width: fit-content;
   margin: auto;
@@ -45,7 +45,7 @@ h3 {
 h4 {
   font-family: "Roboto";
   color: #fff;
-  background: #9e9e9e;
+  background: #9ca694;
   margin: 0;
   white-space: nowrap;
   font-weight: normal;
@@ -93,11 +93,11 @@ a {
 span {
   font-family: "Roboto";
   font-weight: bold;
-  color: #07255c;
+  color: #235207;
 }
 
 .header {
-  background-image: url(images/header-mobile.jpeg);
+  background-image: url(images/header-mobile.jpg);
   height: 130vw;
   background-size: cover;
   position: relative;
@@ -106,12 +106,14 @@ span {
 
 .layer-header {
   position: absolute;
-  z-index: 2;
+  z-index: 5;
   background: black;
   height: 100%;
   width: 100%;
-  opacity: 0.4;
+  opacity: 0.6;
   margin: auto;
+  background-image: url(images/redox-02.png);
+  background-repeat: repeat;
 }
 
 .header-content {
@@ -189,14 +191,14 @@ span {
 .line {
   width: 40px;
   height: 3px;
-  background: #07255c;
+  background: #235207;
 }
 
 .circle {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #07255c;
+  background: #235207;
   margin-left: -5px;
 }
 
@@ -395,7 +397,7 @@ code {
 .icon-container-blue {
   height: 12vw;
   width: 12vw;
-  border: 3px solid #07255c;
+  border: 3px solid #235207;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -403,7 +405,7 @@ code {
   margin-right: 5px;
 }
 .contact {
-  background: #07255c;
+  background: #1a3808;
   text-align: center;
   padding: 36px;
 }
@@ -421,7 +423,7 @@ code {
 
 footer {
   color: #fff;
-  background: #031027;
+  background: #122703;
   text-align: center;
   font-size: 12px;
   padding: 10px;
@@ -454,8 +456,25 @@ footer a {
     font-size: 30px;
   }
   .header {
-    background-image: url(images/header-tablet.jpeg);
+    background-image: none;
     height: 40vw;
+    background-size: cover;
+  }
+  .video-container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 2;
+  }
+  video {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0.9;
+    margin: auto;
   }
 
   .header-text {
@@ -507,6 +526,9 @@ footer a {
   }
 }
 @media (min-width: 1025px) {
+  .header-text {
+    width: 80%;
+  }
   h1 {
     font-size: 60px;
   }
@@ -517,8 +539,5 @@ footer a {
 
   h6 {
     font-size: 24px;
-  }
-  .header {
-    background-image: url(images/header-desktop.jpeg);
   }
 }
