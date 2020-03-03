@@ -112,8 +112,8 @@ span {
   width: 100%;
   opacity: 0.6;
   margin: auto;
-  background-image: url(images/redox-02.png);
-  background-repeat: repeat;
+  /* background-image: url(images/redox-02.png);
+  background-repeat: repeat; */
 }
 
 .header-content {
