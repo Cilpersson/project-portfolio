@@ -367,12 +367,12 @@ code {
   margin: 0 10px;
 }
 
-.social-media-orange img {
+.social-media-blue img {
   width: 6vw;
   height: 6vw;
 }
 
-.social-media-orange {
+.social-media-blue {
   display: flex;
   flex-direction: row;
   width: fit-content;
@@ -391,7 +391,7 @@ code {
   margin-bottom: 36px;
 }
 
-.icon-container-orange {
+.icon-container-blue {
   height: 12vw;
   width: 12vw;
   border: 3px solid #07255c;
@@ -404,7 +404,7 @@ code {
 .contact {
   background: #07255c;
   text-align: center;
-  padding: 46px 36px;
+  padding: 36px;
 }
 
 .contact p {
@@ -418,7 +418,26 @@ code {
   font-weight: bold;
 }
 
-@media (max-width: 270px) {
+footer {
+  color: #fff;
+  background: #031027;
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+}
+
+footer p {
+  color: white;
+  margin: auto;
+  text-align: center;
+  font-size: 12px;
+}
+
+footer a {
+  font-weight: bold;
+}
+
+@media (max-width: 300px) {
   .tag-container {
     display: flex;
     flex-direction: column;
@@ -452,14 +471,14 @@ code {
     margin-right: 5px;
   }
 
-  .social-media-orange img {
+  .social-media-blue img {
     width: 3vw;
     height: 3vw;
     max-width: 30px;
     max-height: 30px;
   }
 
-  .icon-container-orange {
+  .icon-container-blue {
     height: 6vw;
     width: 6vw;
     max-width: 50px;
