@@ -227,6 +227,10 @@ span {
   grid-template-columns: repeat(auto-fit, minmax(150px, 480px));
 }
 
+.second-thought {
+  display: none;
+}
+
 .project-view {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -522,6 +526,11 @@ footer a {
   .card-grid {
     grid-template-columns: repeat(2, minmax(150px, 280px));
   }
+
+  .second-thought {
+    display: flex;
+  }
+
   .skill-div {
     margin: 0 30px;
   }
