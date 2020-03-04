@@ -277,6 +277,7 @@ span {
 
 .tag-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .other-projects {
