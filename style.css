@@ -45,7 +45,7 @@ h3 {
 h4 {
   font-family: "Roboto";
   color: #fff;
-  background: #9ca694;
+  background: #8a9782;
   margin: 0;
   white-space: nowrap;
   font-weight: normal;
@@ -227,7 +227,7 @@ span {
   grid-template-columns: repeat(auto-fit, minmax(150px, 480px));
 }
 
-.second-thought {
+.hidden-for-mobile {
   display: none;
 }
 
@@ -527,7 +527,7 @@ footer a {
     grid-template-columns: repeat(2, minmax(150px, 280px));
   }
 
-  .second-thought {
+  .hidden-for-mobile {
     display: flex;
   }
 
