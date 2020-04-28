@@ -14,4 +14,4 @@
 
 ### View it live:
 
-https://www.christinapersson.se/
+https://vanilla-portfolio.netlify.app/
